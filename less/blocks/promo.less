@@ -1,3 +1,68 @@
 .promo {
+  margin-top: 20px;
+}
+
+.swiper-wrapper {
+  .reset();
+  list-style: none;
+}
+
+.promo__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   
+  img {
+    display: block;
+    height: 360px;
+    min-width: 100%;
+    max-width: none;
+    object-fit: cover;
+  }
+}
+
+.promo__info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: ~"calc(50% - 490px)";
+  background-color: rgba(0,0,0,0.8);
+  padding: 30px 40px;
+  color: #fff;
+  border-radius: 6px;
+  
+  p {
+    margin: 0;
+    color: @orange;
+    font-size: 36px;
+  }
+  
+  i {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+  }
+}
+
+.promo__prev {
+  left: 0;
+  width: 55px;
+  height: 47px;
+  background-image: url(../img/ico-map.png);
+  background-repeat: no-repeat;
+  background-position: 0px -91px;
+  background-size: auto;
+  outline: none;
+}
+
+.promo__next {
+  right: 0;
+  width: 55px;
+  height: 47px;
+  background-image: url(../img/ico-map.png);
+  background-repeat: no-repeat;
+  background-position: -55px -91px;
+  background-size: auto;
+  outline: none;
 }

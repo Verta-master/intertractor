@@ -9,20 +9,28 @@
 }
 
 .news__img {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    .transition();
+  }
 }
 
 .news__title {
   margin: 0;
-  font-size: 20px;
+  font-size: 32px;
   font-weight: 500;
   line-height: 1.6;
   
   a {
-    position: absolute;
-    bottom: 40px;
-    left: 24px;
-    color: #ff181f;
+    padding-left: 32px;
+    color: @orange;
     font-size: 14px;
     font-weight: 400;
   }
@@ -32,6 +40,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  .transition();
 }
 
 .news__date {
@@ -42,56 +51,67 @@
 }
 
 .news__slide {
+  width: 237px;
+  min-height: 320px;
+  background-color: #fff;
+  border: solid 1px #f3eded;
   padding-bottom: 27px;
   box-sizing: border-box;
+  .transition();
+  
+  &:hover {
+    .news__subtitle {
+      color: @orange;
+      .transition();
+    }
+    .news__img img {
+      transform: scale(1.05);
+      .transition();
+    }
+  }
+}
+
+.news__info {
+  padding: 15px;
+}
+
+.news__slider {
+  width: 100%;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.news__slider .news__pagination {
+  bottom: 0;
+  
+  .swiper-pagination-bullet-active {
+    background-color: #6e6e6e;
+  }
 }
 
 .news__next,
 .news__prev {
-  display: none;
+  top: 60px;
   width: 46px;
   height: 46px;
   border-radius: 50%;
   border: 1px solid #999;
   outline: none;
   background-size: 24px 24px;
-}
-
-.news__next {
-  right: 24px;
-  top: 40px;
   background-image: url(../img/arrow-right-mob.svg);
   
   &:hover,
   &:active {
-    border-color: #ff181f;
-    background-image: url(../img/arrow-right-red.svg);
+    border-color: @orange;;
   }
+}
+
+.news__next {
+  right: 24px;
 }
 
 .news__prev {
-  top: 40px;
   right: 80px;
   left: auto;
-  background-image: url(../img/arrow-left-mob.svg);
-  
-  &:hover,
-  &:active {
-    border-color: #ff181f;
-    background-image: url(../img/arrow-left-red.svg);
-  }
-}
-
-.news__slider {
-  overflow: visible;
-  margin-top: 30px;
-  padding-bottom: 8px;
-  
-  .swiper-wrapper {
-    flex-direction: column;
-  }
-}
-
-.news__pagination {
-  display: none;
+  transform: rotate(180deg);
 }
