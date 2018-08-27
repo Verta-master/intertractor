@@ -1,0 +1,25 @@
+.accent {
+  .reset();
+  margin: 30px auto;
+  width: 748px;
+  height: 120px;
+  overflow: hidden;
+  padding: 24px 40px 0 160px;
+  font-size: 14px;
+  font-style: italic;
+  background-image: url(../img/accent-1_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  a {
+    color: @blue;
+    text-decoration: none;
+    border-bottom: 1px dashed @blue;
+    
+    &:hover,
+    &:active {
+      color: @orange;
+      border-bottom-color: @orange;
+    }
+  }
+}
