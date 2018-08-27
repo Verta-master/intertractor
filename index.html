@@ -19,7 +19,7 @@
         </div>
         <div class="header__call">
           <a href="tel:+73432878707" class="header__phone">8 (343) 287-87-07</a>
-          <a href="#" class="header__order">Заказать звонок</a>
+          <a data-fancybox data-src="#order" href="javascript:;" class="header__order">Заказать звонок</a>
         </div>
         <div class="header__links">
           <a href="mailto:" class="header__mail">Написать нам</a>
@@ -530,7 +530,7 @@
     </div>
   </footer>
   
-  <!-- Modal window -->
+  <!-- Modal windows -->
   <div style="display: none;" id="call" class="modal">
     <p class="modal__title">Выберите ваш город</p>
     <div class="modal__info">
@@ -717,6 +717,17 @@
         </ul>
       </div>
     </div>
+  </div>
+  
+  <div style="display: none;" id="order" class="modal">
+    <p class="title-2">Заказать звонок</p>
+    <form action="#" method="post" class="form">
+      <input type="text" name="name" class="form__input" placeholder="Ваше имя">
+      <input type="tel" name="phone" class="form__input" placeholder="Ваш телефон">
+      <input type="checkbox" name="check" id="check" class="form__check">
+      <label for="check" class="form__label">Я не робот</label>
+      <button type="submit" class="form__btn">Заказать</button>
+    </form>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
