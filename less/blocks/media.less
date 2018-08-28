@@ -89,9 +89,16 @@
   .footer {
     border-top: 3px solid @orange;
   }
-  .modal__info {
-    width: 740px;
-    height: auto;
+  .sidebar__open {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .sidebar__list {
+    display: none;
+    margin-bottom: 30px;
+  }
+  .wrapper--internal {
+    display: block;
   }
 }
 
@@ -146,12 +153,18 @@
   .footer__wrap {
     flex-wrap: wrap;
   }
-  .modal__block {
+  .content {
     width: 100%;
   }
-  .modal__info {
-    width: 460px;
-    display: block;
+  .title-main {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .catalog__list {
+    justify-content: space-around;
+  }
+  .catalog__item {
+    margin-right: 0;
   }
 }
 
@@ -168,7 +181,6 @@
       font-size: 20px;
     }
   }
-  .modal__block,
   .footer__block,
   .footer__list,
   .certificate__item,
@@ -205,7 +217,14 @@
   .contacts__block {
     margin-bottom: 20px;
   }
-  .modal__info {
-    width: 260px;
+  .title-main {
+    font-size: 24px;
+  }
+  .catalog__links li {
+    width: 50%;
+  }
+  .catalog__option {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
