@@ -1,0 +1,142 @@
+.cart__link {
+  display: block;
+  color: #ff181f;
+  float: right;
+  margin-top: -60px;
+  font-size: 14px;
+}
+
+.cart__list {
+  .reset();
+  list-style: none;
+  margin-top: 40px;
+  border: solid 1px #e3e3e3;
+  border-bottom: none;
+}
+
+.cart__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: solid 1px #e1e1e1;
+  background-image: url(../img/icon-close.svg);
+  background-size: 18px 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  &:hover,
+  &:active {
+    border-color: @orange;
+    background-image: url(../img/icon-close-red.svg);
+  }
+}
+
+.cart__item {
+  padding: 14px 16px 18px;
+  padding-left: 24px;
+  min-height: 88px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: solid 1px #e3e3e3;
+  
+  &--header {
+    height: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #f0f0f0;
+  }
+}
+
+.cart__name {
+  width: 590px;
+  margin-top: 0;
+  
+  a {
+    font-size: 16px;
+    line-height: 1.63;
+  }
+}
+
+.cart__price,
+.cart__number,
+.cart__total {
+  text-align: right;
+  position: relative;
+  margin-bottom: 8px;
+  
+  span {
+    color: #999999;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.cart__number {
+  span {
+    top: 7px;
+  }
+}
+
+.cart__total {
+  font-weight: 500;
+  width: auto;
+  padding-left: 45px;
+}
+
+.cart__field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 88px;
+  height: 32px;
+  margin: 0;
+  margin-left: auto;
+  border-radius: 18px;
+  border: solid 1px #e1e1e1;
+  text-align: center;
+  font-size: 16px;
+}
+
+.cart__change {
+  width: 30%;
+  height: 95%;
+  padding: 0;
+}
+
+button.cart__change {
+  color: #e1e1e1;
+  font-size: 30px;
+  
+  &:hover,
+  &:active {
+    color: #ff181f;
+  }
+}
+
+input.cart__change {
+  text-align: center;
+}
+
+.cart__remove {
+  margin-bottom: 0;
+}
+
+.cart__sum {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-bottom: 56px;
+  font-size: 16px;
+  position: relative;
+  
+  span {
+    margin-left: 42px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+}

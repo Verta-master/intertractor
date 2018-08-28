@@ -239,6 +239,28 @@
             <li><a href="#">Brand 2</a></li>
             <li><a href="#">Brand 3</a></li>
           </ul>
+          <form action="#" method="get" class="filter">
+            <div class="filter__field">
+              <label for="apply" class="filter__label">ПРИМЕНЯЕМОСТЬ</label>
+              <select name="apply" id="apply" class="filter__select">
+                <option value="" disabled selected>Название</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </select>
+            </div>
+            <div class="filter__field">
+              <label for="brand" class="filter__label">БРЕНД</label>
+              <select name="brand" id="brand" class="filter__select">
+                <option value="" disabled selected>Название</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </select>
+            </div>
+            <input type="checkbox" name="check" id="check" class="filter__check" checked>
+            <label for="check" class="filter__checkbox">В наличии</label>
+            <button type="submit" class="filter__btn">Применить</button>
+          </form>
+          
           <div class="catalog__filter">
             <div class="catalog__option">
               <span>Цена</span>
