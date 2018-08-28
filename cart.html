@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Интернет-магазин запчастей для спецтехники «Интертрактор»</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__top">
+        <a href="#" class="logo">
+          <img src="img/logo_intertractor.png" alt="Logo" width="446" height="52">
+        </a>
+        <div class="header__call">
+          <a href="tel:+73432878707" class="header__phone">8 (343) 287-87-07</a>
+          <a data-fancybox data-src="#order" href="javascript:;" class="header__order">Заказать звонок</a>
+        </div>
+        <div class="header__links">
+          <a href="mailto:" class="header__mail">Написать нам</a>
+          <a href="#" class="header__web">Веб-камера склада</a>
+          <a href="#" download class="header__xls">Наличие в .XLS</a>
+        </div>
+        <div class="header__links">
+          <a data-fancybox data-src="#call" href="javascript:;" class="header__login">Авторизация</a>
+          <a href="#" class="header__cart header__cart--full">1500 &#8381;</a>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <nav class="menu">
+          <button type="button" class="menu__btn"><span class="visually-hidden">Menu</span></button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Каталог</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Доставка</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакты</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">HITACHI</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">KOMATSU</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">HYUNDAI</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Еще</a>
+              <div class="menu__wrap">
+                <ul class="menu__sublist">
+                  <li><a href="#" class="menu__link">Файлы для скачивания</a></li>
+                  <li><a href="#" class="menu__link">Сертификаты</a></li>
+                  <li><a href="#" class="menu__link">Политика конфиденциальности</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <form action="#" method="get" class="search">
+          <input type="text" name="search" class="search__input" placeholder="Номер или название">
+          <button type="submit" class="search__btn"><span class="visually-hidden">Найти</span></button>
+        </form>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <nav class="breadcrumbs breadcrumbs--top wrapper">
+      <a href="#" class="breadcrumbs__link">ИНТЕРТРАКТОР</a>
+      <span class="breadcrumbs__link">Корзина</span>
+    </nav>
+
+    <section class="cart wrapper">
+      <p class="title-main">Корзина</p>
+      <a href="#" class="cart__link">Назад к списку запчастей</a>
+      <ul class="cart__list">
+        <li class="cart__item cart__item--header">
+          <p class="cart__name">Наименование</p>
+          <p class="cart__price">Цена</p>
+          <p class="cart__number">Кол-во</p>
+          <p class="cart__total">Стоимость</p>
+        </li>
+        <li class="cart__item">
+          <p class="cart__name"><a href="#">Замок двери кабины левый MAN 81.62680.6121</a></p>
+          <p class="cart__price"><span>Цена</span>2 350 руб.</p>
+          <div class="cart__number">
+            <span>Кол-во</span>
+            <p class="cart__field">
+              <button type="button" class="cart__change">+</button>
+              <input type="text" class="cart__change" value="2">
+              <button type="button" class="cart__change">-</button>
+            </p>
+          </div>
+          <p class="cart__total"><span>Стоимость</span>4 700 руб.</p>
+          <p class="cart__remove">
+            <button type="button" class="cart__btn"><span>Удалить</span></button>
+          </p>
+        </li>
+        <li class="cart__item">
+          <p class="cart__name"><a href="#">Очень длинное название детали, например наконечник 12-6-E-CUF20-GALSN3 MAN 81254116050</a></p>
+          <p class="cart__price"><span>Цена</span>15 000 руб.</p>
+          <div class="cart__number">
+            <span>Кол-во</span>
+            <p class="cart__field">
+              <button type="button" class="cart__change">+</button>
+              <input type="text" class="cart__change" value="1">
+              <button type="button" class="cart__change">-</button>
+            </p>
+          </div>
+          <p class="cart__total"><span>Стоимость</span>15 000 руб.</p>
+          <p class="cart__remove">
+            <button type="button" class="cart__btn"><span>Удалить</span></button>
+          </p>
+        </li>
+      </ul>
+      <p class="cart__sum">Итого:<span>19 700 руб.</span></p>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper footer__wrap">
+      <div class="footer__block">
+        <p class="footer__title">ЕКАТЕРИНБУРГ © 2018 ИНТЕРТРАКТОР</p>
+        <p>Запасные части для спецтехники Hitachi, Komatsu, Hyundai </p>
+      </div>
+      <ul class="footer__list">
+        <li><a href="#">Гидроцилиндры</a></li>
+        <li><a href="#">Детали двигателя</a></li>
+        <li><a href="#">Двигатели в сборе</a></li>
+        <li><a href="#">Карданы и крестовины</a></li>
+        <li><a href="#">Коронки ножи бокорезы</a></li>
+        <li><a href="#">Пальцы и втулки</a></li>
+      </ul>
+      <ul class="footer__list">
+        <li><a href="#">Радиаторы</a></li>
+        <li><a href="#">Ремкомплекты гидроцилиндров</a></li>
+        <li><a href="#">Ремни</a></li>
+        <li><a href="#">Стартеры и генераторы</a></li>
+        <li><a href="#">Стекла кабины</a></li>
+        <li><a href="#">Топливная аппаратура</a></li>
+      </ul>
+      <ul class="footer__list">
+        <li><a href="#">Турбокомпрессоры</a></li>
+        <li><a href="#">Уплотнения</a></li>
+        <li><a href="#">Фильтры</a></li>
+        <li><a href="#">Ходовая</a></li>
+        <li><a href="#">Насосы гидравлические</a></li>
+        <li><a href="#">Редукторы хода</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+  <!-- Modal windows -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="title-2">Авторизация</p>
+    <form action="#" method="post" class="form">
+      <input type="text" name="name" class="form__input" placeholder="Ваше имя">
+      <input type="password" name="password" class="form__input" placeholder="Пароль">
+      <button type="submit" class="form__btn">Войти</button>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="order" class="modal">
+    <p class="title-2">Заказать звонок</p>
+    <form action="#" method="post" class="form">
+      <input type="text" name="name" class="form__input" placeholder="Ваше имя">
+      <input type="tel" name="phone" class="form__input" placeholder="Ваш телефон">
+      <input type="checkbox" name="check" id="check" class="form__check">
+      <label for="check" class="form__label">Я не робот</label>
+      <button type="submit" class="form__btn">Заказать</button>
+    </form>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
