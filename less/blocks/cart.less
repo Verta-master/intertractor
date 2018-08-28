@@ -1,9 +1,14 @@
 .cart__link {
   display: block;
-  color: #ff181f;
+  color: @orange;
   float: right;
   margin-top: -60px;
   font-size: 14px;
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
 }
 
 .cart__list {
@@ -20,6 +25,7 @@
   align-items: center;
   width: 32px;
   height: 32px;
+  margin-left: auto;
   border-radius: 50%;
   border: solid 1px #e1e1e1;
   background-image: url(../img/icon-close.svg);
@@ -31,6 +37,10 @@
   &:active {
     border-color: @orange;
     background-image: url(../img/icon-close-red.svg);
+  }
+  
+  span {
+    display: none;
   }
 }
 
@@ -45,6 +55,7 @@
   
   &--header {
     height: 40px;
+    min-height: 40px;
     padding-top: 0;
     padding-bottom: 0;
     background-color: #f0f0f0;
@@ -52,23 +63,20 @@
 }
 
 .cart__name {
-  width: 590px;
-  margin-top: 0;
-  
-  a {
-    font-size: 16px;
-    line-height: 1.63;
-  }
+  width: 47%;
+  margin: 0;
 }
 
 .cart__price,
 .cart__number,
 .cart__total {
-  text-align: right;
+  width: 15%;
+  text-align: center;
   position: relative;
-  margin-bottom: 8px;
+  margin: 0;
   
   span {
+    display: none;
     color: #999999;
     position: absolute;
     left: 0;
@@ -84,8 +92,8 @@
 
 .cart__total {
   font-weight: 500;
-  width: auto;
-  padding-left: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .cart__field {
@@ -96,6 +104,7 @@
   height: 32px;
   margin: 0;
   margin-left: auto;
+  margin-right: auto;
   border-radius: 18px;
   border: solid 1px #e1e1e1;
   text-align: center;
@@ -110,11 +119,11 @@
 
 button.cart__change {
   color: #e1e1e1;
-  font-size: 30px;
+  font-size: 20px;
   
   &:hover,
   &:active {
-    color: #ff181f;
+    color: @orange;
   }
 }
 
@@ -123,20 +132,20 @@ input.cart__change {
 }
 
 .cart__remove {
-  margin-bottom: 0;
+  width: 8%;
+  margin: 0;
 }
 
 .cart__sum {
   margin-top: 15px;
-  margin-left: auto;
   margin-bottom: 56px;
-  font-size: 16px;
   position: relative;
+  text-align: right;
   
   span {
     margin-left: 42px;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 32px;
   }
 }
