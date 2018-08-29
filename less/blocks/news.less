@@ -1,5 +1,28 @@
 .news {
+  position: relative;
   background-color: #f0f0f0;
+  
+  &--card {
+    background-color: #fff;
+    
+    .news__slide {
+      width: 221px;
+      min-height: 270px;
+      border: none;
+    }
+    .news__subtitle {
+      color: @blue;
+      text-decoration: underline;
+    }
+    .news__info {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .news__next,
+    .news__prev {
+      top: 20px;
+    }
+  }
 }
 
 .news__wrap {
@@ -91,14 +114,15 @@
 
 .news__next,
 .news__prev {
-  top: 60px;
-  width: 46px;
-  height: 46px;
+  top: 75px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid #999;
   outline: none;
   background-size: 24px 24px;
-  background-image: url(../img/arrow-right-mob.svg);
+  background-image: url(../img/arrow-orange.svg);
+  background-position: center;
   
   &:hover,
   &:active {
@@ -111,7 +135,7 @@
 }
 
 .news__prev {
-  right: 80px;
+  right: 65px;
   left: auto;
   transform: rotate(180deg);
 }
