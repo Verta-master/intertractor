@@ -2031,6 +2031,7 @@ input.cart__change {
           align-items: center;
   width: 200px;
   height: 40px;
+  margin-bottom: 10px;
   color: #fff;
   font-size: 14px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f58220), to(#e56a01));
