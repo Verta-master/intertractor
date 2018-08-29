@@ -2454,6 +2454,7 @@ input.cart__change {
   .news--card .news__prev {
     top: 50%;
   }
+  .certificate .title,
   .news--card .title {
     text-align: center;
   }
